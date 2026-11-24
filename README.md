@@ -14,7 +14,7 @@ LED · 스위치 · 타이머 · 인터럽트를 가진 AXI4-Lite 슬레이브 �
 
 - Tools: Synopsys VCS · Verdi · URG, Vivado / Vitis 2020.2, Python
 - 역할: 검증 환경 · 테스트 시나리오 · 디버깅 · SoC 통합은 직접 수행, RTL은 AI 도움을 받아 작성
-- 발표 자료 (PDF): `docs/` · 보드 영상: 6. SoC 통합 참고
+- 보드 동작 영상: 6. SoC 통합 참고
 
 ---
 
@@ -97,7 +97,9 @@ test (axi_rand_test · axi_timer_test · axi_pipe_test)
 
 MicroBlaze → AXI Interconnect → `axi_periph_0` (`board/axi_periph.v`, 0x44A0_0000), irq → xlconcat → AXI INTC, UART Lite 115200
 
-! [board] (images/board.jpg)
+![block design](images/block_design.png)
+
+![board](images/board.jpg)
 
 https://github.com/user-attachments/assets/6ed68fff-d82f-4d6c-8c0e-b24eaf0455d9
 
